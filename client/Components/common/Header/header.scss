@@ -1,0 +1,27 @@
+.hptl-phase1-registeration{
+	.menuBar-title{
+	    display: flex;
+    	justify-content: center;
+	}
+	.drawer_color{
+		background-color: #292929;
+	}
+	.paper{
+	  background-color: #292929 !important;
+	}
+	.close-menu{
+	    padding-top: 10px;
+	    cursor: pointer;
+	}
+	.title-section{
+		    height: 65px;
+    width: 251px;
+    position: absolute;
+    top: 0px;
+    background: #fff;
+    z-index: 100000;
+	}
+	.drawerPaper{
+		background: #292929;
+	}
+}

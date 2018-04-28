@@ -1,0 +1,19 @@
+.hptl-phase1-patient-form{
+	background: #fff;
+	border-radius: 5px;
+}
+
+.hptl-phase1-add-patient-form{
+	.form-details{
+		padding: 10px;
+		padding-bottom: 0px;
+	}
+	mark{
+		background: none;
+		color: red;
+	}
+	label{
+		font-weight: 400;
+		font-size: 11px;
+	}
+}

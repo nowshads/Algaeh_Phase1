@@ -1,0 +1,66 @@
+[
+	{
+		"name": "DASHBOARD",
+		"label": "DASHBOARD",
+		"path": "/dashboard/",
+		"subMenu" : []
+	},
+	{
+		"name": "APPOINTMENT",
+		"label": "APPOINTMENT",
+		"path": "/appointment/",
+		"subMenu" : []
+	},
+	{
+		"name": "REGISTRATION",
+		"label": "REGISTRATION",
+		"path": "/registration/",
+		"subMenu": [
+			{
+				"name": "Patient Registration",
+				"label": "Patient Registration",
+				"path": "/registration/patient-registration"
+			},
+			{
+				"name": "Our Patient",
+				"label": "Our Patient",
+				"path": "/registration/our-patient"
+			},
+			{
+				"name": "Patient Re-visit",
+				"label": "Patient Re-visit",
+				"path": "/registration/patient-revisit"
+			},
+			{
+				"name": "OP List",
+				"label": "OP List",
+				"path": "/registration/op-list"
+			},
+			{
+				"name": "Registration List",
+				"label": "Registration List",
+				"path": "/registration/registration-list"
+			},
+			{
+				"name": "Clinic List",
+				"label": "Clinic List",
+				"path": "/registration/clinic-list"
+			}
+		]
+	},
+	{
+		"name": "ADMISSION",
+		"label": "ADMISSION",
+		"path": "/admission/",
+		"subMenu" : []
+
+	},
+	{
+		"name": "OP BILL",
+		"label": "OP BILL",
+		"path": "/op-bill/",
+		"subMenu" : []
+
+	}
+
+]
