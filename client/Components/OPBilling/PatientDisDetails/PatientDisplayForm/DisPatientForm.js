@@ -70,6 +70,7 @@ export default class DisPatientForm extends Component {
                   <TextFieldData disabled={true}/>
                 </div>
               </div>
+              <br />
               <div className="container-fluid">
                 <div className="row">       
                   <InsuranceDisDetails />

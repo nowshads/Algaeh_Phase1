@@ -17,9 +17,10 @@ export default class VisitDetails extends Component{
 			<div className="hptl-phase1-add-visit-form">
 				<div className="container-fluid">
 					<div className="row">
+						<br />
 						<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-							<table className="table table-striped table-details" style={{fontSize: "12px"}}>
-							  <thead style={{background: "#b4e2df"}}>
+							<table className="table table-bordered table-details" style={{fontSize: "12px"}}>
+							  <thead style={{background: "#B4E2DF"}}>
 							    <tr>
 							      <th scope="col">#</th>
 							      <th scope="col">VISIT CODE</th>

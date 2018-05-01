@@ -15,6 +15,6 @@ export default class InsuranceForm extends Component{
 			<div className="hptl-phase1-insurance-form">
 				<AddInsuranceForm />
 			</div>
-		);
+		); 
 	}
 }

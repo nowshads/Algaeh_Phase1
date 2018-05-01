@@ -35,7 +35,7 @@ export default class AddBillingForm extends Component {
           <div className="row form-details">
             <div className="col table-responsive">
               <table
-                className="table table-striped table-details"
+                className="table table-bordered table-details"
                 style={{ fontSize: "12px" }}
               >
                 <thead style={{ background: "#b4e2df" }}>
@@ -148,16 +148,8 @@ export default class AddBillingForm extends Component {
             </div>
           </div>
 
-          <div className="row header-details">
-            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
-              <label>Discount By</label>
-            </div>
-
-            <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
-              <TextFieldData disabled={true} type="number" />
-            </div>
-
-            <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+          <div className="row header-details">            
+            <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
               &nbsp;
             </div>
 

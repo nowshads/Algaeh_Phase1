@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import {render} from "react-dom";
 import {Provider} from "react-redux";
-// import reducers from "./reducers/index";
+import reducers from "./reducers/index.js";
 import logger from "redux-logger";
 import routes from "./routes.js";
 import thunk from "redux-thunk";
@@ -13,7 +13,7 @@ import {applyMiddleware,  createStore} from "redux";
 const middleware = applyMiddleware(thunk, logger);
 
 //const persistedState = localStorage.getItem("reduxState")  ? JSON.parse(localStorage.getItem("reduxState")) : {};
-const store = createStore(middleware);
+const store = createStore(reducers, middleware);
 
 // const store = createStore((state, action) => {
 // 	return state;

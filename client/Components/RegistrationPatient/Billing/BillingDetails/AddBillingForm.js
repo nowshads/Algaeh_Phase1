@@ -35,9 +35,15 @@ export default class AddBillingForm extends Component{
 		
 			<div className="hptl-phase1-add-billing-form">
 				<div className="container-fluid">
+					<div className="row">
+						<div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+							<label>BILL NUMBER<mark>*</mark></label><br />
+							<TextFieldData hintText="Visit ID" disabled={true}/>
+						</div>
+					</div>
 					<div className="row form-details">
 						<div className="col table-responsive">
-							<table className="table table-striped table-details">
+							<table className="table table-bordered table-details">
 								<thead style={{background: "#b4e2df"}}>
 									<tr>
 									<th scope="col">ACTION</th>
@@ -47,9 +53,27 @@ export default class AddBillingForm extends Component{
 										<th scope="col">DEPARTMENT</th>
 										<th scope="col">IN-CHARGE/PROVIDER</th>										
 										<th scope="col">BILL DATE</th>
+										<th scope="col">ADV. FEE</th>	
 										<th scope="col">CONSULT FEE</th>
-										<th scope="col">ADV. FEE</th>
-										<th scope="col">DISCOUNT</th>
+										<th scope="col">DISCOUNT%</th>
+										<th scope="col">DISCOUNT AMT.</th>
+										<th scope="col">INSURANCE</th>
+										<th scope="col">CO-PAY%</th>
+										<th scope="col">CO-PAY AMT.</th>
+										<th scope="col">PAT. RESP.</th>
+										<th scope="col">COMP. RESP</th>
+										<th scope="col">PAT. TAX</th>
+										<th scope="col">COMP. TAX</th>
+										<th scope="col">PAT. PAYABLE</th>
+										<th scope="col">COMP. PAYABLE</th>
+
+										<th scope="col">SEC. INSURANCE</th>
+										<th scope="col">CO-PAY%</th>
+										<th scope="col">CO-PAY AMT.</th>										
+										<th scope="col">COMP. RESP</th>
+										<th scope="col">PAT. TAX</th>
+										<th scope="col">COMP. TAX</th>										
+										<th scope="col">COMP. PAYABLE</th>																			
 										<th scope="col">TOTAL AMT.</th>
 									</tr>
 								</thead>
@@ -65,10 +89,20 @@ export default class AddBillingForm extends Component{
 										<td><SelectFieldDrop children={FORMAT_DEFAULT} width="130px"/></td>
 										<td><SelectFieldDrop children={FORMAT_DEFAULT} width="130px"/></td>
 										<td><TextFieldData id="date" label="BILL DATE" type="date" defaultValue="2017-05-24"/></td>
-										<td><TextFieldData hintText="CONSULT FEE" /></td>
-										<td><TextFieldData hintText="ADV. FEE" /></td>
-										<td><TextFieldData hintText="DISCOUNT" /></td>
-										<td><TextFieldData hintText="TOTAL AMT." disabled={true}/></td>
+										<td><TextFieldData/></td>
+										<td><TextFieldData/></td>
+										<td><TextFieldData/></td>
+										<td><TextFieldData disabled={true}/></td>
+										<td><TextFieldData disabled={true}/></td>
+
+										<td><TextFieldData disabled={true}/></td>
+										<td><TextFieldData disabled={true}/></td>
+										<td><TextFieldData disabled={true}/></td>
+										<td><TextFieldData disabled={true}/></td>
+										<td><TextFieldData disabled={true}/></td>
+										<td><TextFieldData disabled={true}/></td>
+										<td><TextFieldData disabled={true}/></td>
+										<td><TextFieldData disabled={true}/></td>
 
 									</tr>							       
 								</tbody>
@@ -113,15 +147,15 @@ export default class AddBillingForm extends Component{
 
 					<div className="row header-details">						
 
-						<div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+						{/* <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
 							<label>Discount By</label>							
 						</div>	
 
 						<div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
 							<TextFieldData disabled={true} type="number"/>
-						</div>
+						</div> */}
 
-						<div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+						<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
 							&nbsp;							
 						</div>
 						

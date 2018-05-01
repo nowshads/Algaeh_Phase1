@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import InsuranceForm from "./InsuranceForm/InsuranceForm.js";
 import SecondaryInsurance from "./SecondaryInsurance/SecondaryInsurance.js";
+import InsuranceList from "./InsuranceList/InsuranceList.js";
 import styles from "./InsuranceDetails.scss";
 import style from "./../../../styles/site.scss";
 
@@ -36,10 +37,10 @@ export default class InsuranceDetails extends Component{
 				<div className="row">
 					<div className="tab-container toggle-section">
 	                    <div className="row">
-	        		       <div className="col-xs-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 tab" onClick={this.openTab.bind(this, "primary-insurance")}>
+	        		       <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 tab" onClick={this.openTab.bind(this, "primary-insurance")}>
 	                            <button className={"tab-button " + primaryInsurance}>PRIMARY INSURANCE DETAILS</button>
 	                        </div>
-	                        <div className="col-xs-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 tab" onClick={this.openTab.bind(this, "secondary-insurance")}>
+	                        <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 tab" onClick={this.openTab.bind(this, "secondary-insurance")}>
 	                            <button className={"tab-button " + secondaryInsurance}>SECONDARY INSURANCE DETAILS</button>
 	                        </div>
 	                    </div>
@@ -52,6 +53,9 @@ export default class InsuranceDetails extends Component{
 		                null:
 		                <SecondaryInsurance />}
 	                </div>
+					<div>
+						<InsuranceList />
+					</div>
 	            </div>
 				</div>
 				</div>

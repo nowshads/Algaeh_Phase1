@@ -10,6 +10,7 @@ import {
 
 import RegistrationPatient from "./components/RegistrationPatient/RegistrationPatient.js";
 import OPBilling from "./components/OPBilling/OPBilling.js";
+import Login from "./components/Login/Login.js";
 const appRoutes = [
 	{
 		path: "/",

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styles from "./SecondaryInsurance.scss";
+import AddSecInsuranceForm from "./AddSecInsuranceForm.js";
 
 export default class SecondaryInsurance extends Component{
 		constructor(props){
@@ -11,8 +12,8 @@ export default class SecondaryInsurance extends Component{
 
 	render() {
 		return (
-			<div className="">
-				SecondaryInsurance
+			<div className="hptl-phase1-secinsurance-form">
+				<AddSecInsuranceForm />
 			</div>
 		);
 	}

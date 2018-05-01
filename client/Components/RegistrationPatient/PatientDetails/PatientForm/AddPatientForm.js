@@ -113,7 +113,7 @@ export default class AddPatientForm extends Component{
 								<div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
 									<label>AGE<mark>*</mark></label><br />
 									<TextFieldData
-									    hintText="EMERG.CONTACT PERSON" 
+									    placeholder="YYYY" 
 									    width="50px"
 									    //floatingLabelText="LAST NAME"
 									    //onChange={onChange}
@@ -122,7 +122,7 @@ export default class AddPatientForm extends Component{
 									    // focus={focus}
 									/>
 									<TextFieldData
-									    hintText="EMERG.CONTACT PERSON" 
+									    placeholder="MM" 
 									    width="50px"
 									    //floatingLabelText="LAST NAME"
 									    //onChange={onChange}
@@ -131,7 +131,7 @@ export default class AddPatientForm extends Component{
 									    // focus={focus}
 									/>
 									<TextFieldData
-									    hintText="EMERG.CONTACT PERSON" 
+									    placeholder="DD" 
 									    width="50px"
 									    //floatingLabelText="LAST NAME"
 									    //onChange={onChange}
@@ -172,17 +172,7 @@ export default class AddPatientForm extends Component{
 									    // focus={focus}
 									/>
 								</div>
-								<div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-									<label>EMERG.CONTACT NO<mark>*</mark></label><br />
-									<TextFieldData
-									    hintText="EMERG.CONTACT NO" 
-									    //floatingLabelText="LAST NAME"
-									    //onChange={onChange}
-									    // value={attributes.attributeName}
-									    // error={error.attributeName}
-									    // focus={focus}
-									/>
-								</div>
+
 								<div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
 								<label>VISA TYPE<mark>*</mark></label><br />
 								<SelectFieldDrop
@@ -191,8 +181,7 @@ export default class AddPatientForm extends Component{
 									width="180px"
 								/>
 								</div>
-							</div>
-							<div className="row primary-box-container">
+
 								<div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
 									<label>NATIONALITY<mark>*</mark></label><br />
 									<SelectFieldDrop
@@ -201,6 +190,9 @@ export default class AddPatientForm extends Component{
 										width="180px"
 									/>
 								</div>
+							</div>
+							<div className="row primary-box-container">
+								
 								<div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
 									<label>POSTAL CODE<mark>*</mark></label><br />
 									<TextFieldData
@@ -212,6 +204,19 @@ export default class AddPatientForm extends Component{
 									    // focus={focus}
 									/>
 								</div>
+
+								<div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+									<label>EMERG.CONTACT NO<mark>*</mark></label><br />
+									<TextFieldData
+									    hintText="EMERG.CONTACT NO" 
+									    //floatingLabelText="LAST NAME"
+									    //onChange={onChange}
+									    // value={attributes.attributeName}
+									    // error={error.attributeName}
+									    // focus={focus}
+									/>
+								</div>
+
 								<div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
 									<label>EMERG.CONTACT PERSON<mark>*</mark></label><br />
 									<TextFieldData
@@ -234,83 +239,83 @@ export default class AddPatientForm extends Component{
 							</div>
 						</div>
 						<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 secondary-details">
-						<div className="row secondary-box-container">
-							<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-								<label>PRIMARY ID TYPE<mark>*</mark></label><br />
-								<SelectFieldDrop
-									children={FORMAT_DEFAULT}
-									onChange={this.handle.bind(this)}
-									width="180px"
-								/>
+							<div className="row secondary-box-container">
+								<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+									<label>PRIMARY ID TYPE<mark>*</mark></label><br />
+									<SelectFieldDrop
+										children={FORMAT_DEFAULT}
+										onChange={this.handle.bind(this)}
+										width="180px"
+									/>
+								</div>
+								<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+									<label>PRIMARY ID NO<mark>*</mark></label><br />
+									<TextFieldData
+										hintText="PRIMARY ID NO" 
+										//floatingLabelText="LAST NAME"
+										//onChange={onChange}
+										// value={attributes.attributeName}
+										// error={error.attributeName}
+										// focus={focus}
+									/>
+								</div>
 							</div>
-							<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-								<label>PRIMARY ID NO<mark>*</mark></label><br />
-								<TextFieldData
-								    hintText="PRIMARY ID NO" 
-								    //floatingLabelText="LAST NAME"
-								    //onChange={onChange}
-								    // value={attributes.attributeName}
-								    // error={error.attributeName}
-								    // focus={focus}
-								/>
+							<div className="row secondary-box-container">
+								<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+									<label>SEC. ID TYPE<mark>*</mark></label><br />
+									<SelectFieldDrop
+										children={FORMAT_DEFAULT}
+										onChange={this.handle.bind(this)}
+										width="180px"
+									/>
+								</div>
+								<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+									<label>SEC. ID NO<mark>*</mark></label><br />
+									<TextFieldData
+										hintText="PRIMARY ID NO" 
+										//floatingLabelText="LAST NAME"
+										//onChange={onChange}
+										// value={attributes.attributeName}
+										// error={error.attributeName}
+										// focus={focus}
+									/>
+								</div>
 							</div>
-						</div>
-						<div className="row secondary-box-container">
-							<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-								<label>SEC. ID TYPE<mark>*</mark></label><br />
-								<SelectFieldDrop
-									children={FORMAT_DEFAULT}
-									onChange={this.handle.bind(this)}
-									width="180px"
-								/>
-							</div>
-							<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-								<label>SEC. ID NO<mark>*</mark></label><br />
-								<TextFieldData
-								    hintText="PRIMARY ID NO" 
-								    //floatingLabelText="LAST NAME"
-								    //onChange={onChange}
-								    // value={attributes.attributeName}
-								    // error={error.attributeName}
-								    // focus={focus}
-								/>
-							</div>
-						</div>
-						<div className="row secondary-box-container">
-							<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+							<div className="row secondary-box-container">
+								<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+									<div className="image-drop-area">
+										<Dropzone onDrop={this.onDrop.bind(this, "filePreview")} id="attach" className="dropzone" accept="image/*" multiple={false} name="image" >
+											<div className="attach-design text-center" id="attach">ATTACH PHOTO</div>
+										</Dropzone>
+									</div>
+									<div>
+										<img className="preview-image" src={this.state.file['filePreview']} style={{width: this.widthImg, height: "110px"}} />
+									</div>
+								</div>
+								<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
 								<div className="image-drop-area">
-								<Dropzone onDrop={this.onDrop.bind(this, "filePreview")} id="attach" className="dropzone" accept="image/*" multiple={false} name="image" >
-									<div className="attach-design text-center" id="attach">ATTACH PHOTO</div>
-								</Dropzone>
+									<Dropzone  className="dropzone" onDrop={this.onDrop.bind(this, "filePrimaryPreview")} 
+									id="attach-primary-id" accept="image/*" multiple={false} name="image" >
+										<div className="attach-design text-center" id="attach-primary-id">ATTACH PRIM. ID</div>
+									</Dropzone>
+									</div>
+									<div>
+										<img className="preview-image" src={this.state.file['filePrimaryPreview']} style={{width: this.widthImg, height: "110px"}} />
+									</div>
+									
 								</div>
-								 <div>
-                                    <img className="preview-image" src={this.state.file['filePreview']} style={{width: this.widthImg, height: "150px"}} />
-                                </div>
-							</div>
-							<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-							<div className="image-drop-area">
-								<Dropzone  className="dropzone" onDrop={this.onDrop.bind(this, "filePrimaryPreview")} 
-								id="attach-primary-id" accept="image/*" multiple={false} name="image" >
-									<div className="attach-design text-center" id="attach-primary-id">ATTACH PRIM. ID</div>
-								</Dropzone>
+								<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<div className="image-drop-area">
+									<Dropzone  className="dropzone" onDrop={this.onDrop.bind(this, "fileSecPreview")} 
+									id="attach-sec-id" accept="image/*" multiple={false} name="image" >
+										<div className="attach-design text-center" id="attach-sec-id">ATTACH SEC. ID</div>
+									</Dropzone>
+									</div>
+									<div>
+										<img className="preview-image" src={this.state.file['fileSecPreview']} style={{width: this.widthImg, height: "110px"}} />
+									</div>
 								</div>
-								<div>
-                                    <img className="preview-image" src={this.state.file['filePrimaryPreview']} style={{width: this.widthImg, height: "150px"}} />
-                                </div>
-								
 							</div>
-							<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-							<div className="image-drop-area">
-								<Dropzone  className="dropzone" onDrop={this.onDrop.bind(this, "fileSecPreview")} 
-								id="attach-sec-id" accept="image/*" multiple={false} name="image" >
-									<div className="attach-design text-center" id="attach-sec-id">ATTACH SEC. ID</div>
-								</Dropzone>
-								</div>
-								<div>
-                                    <img className="preview-image" src={this.state.file['fileSecPreview']} style={{width: this.widthImg, height: "150px"}} />
-                                </div>
-							</div>
-						</div>
 						</div>
 					</div>
 				</div>

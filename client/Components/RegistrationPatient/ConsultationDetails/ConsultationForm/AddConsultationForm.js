@@ -40,12 +40,12 @@ export default class AddConsultationForm extends Component{
 									<TextFieldData hintText="Visit ID" disabled={true}/>
 								</div>
 								<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-								<label>VISIT TYPE<mark>*</mark></label><br />
-								<SelectFieldDrop
-									children={FORMAT_DEFAULT}
-									onChange={this.handle.bind(this)}
-									width="130px"
-								/>
+									<label>VISIT TYPE<mark>*</mark></label><br />
+									<SelectFieldDrop
+										children={FORMAT_DEFAULT}
+										onChange={this.handle.bind(this)}
+										width="130px"
+									/>
 								</div>								
 							</div>
 							<div className="row primary-box-container">
@@ -97,7 +97,7 @@ export default class AddConsultationForm extends Component{
 							</div>
 						</div>
 						<div className="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 secondary-details">
-							<table className="table table-striped table-details">
+							<table className="table table-bordered table-details">
 							  <thead style={{background: "#b4e2df"}}>
 							    <tr>
 							      <th scope="col">#</th>

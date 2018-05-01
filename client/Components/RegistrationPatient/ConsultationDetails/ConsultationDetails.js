@@ -39,11 +39,11 @@ export default class ConsultationDetails extends Component{
 				        <div className="row">
 					        <div className="tab-container toggle-section">
 	                            <div className="row">
-	        		               <div className="col-xs-4 col-sm-3 col-md-3 col-lg-2 tab">
+	        		               <div className="col col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 tab">
 	                                   <button className={"tab-button " + ConsultationDetails} onClick={this.openTab.bind(this, "Consultation-details")}>Consultation Details</button>
 	                                </div>
 
-	                                <div className="col-xs-4 col-sm-3 col-md-3 col-lg-2 tab">
+	                                <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 tab">
 	                                   <button className={"tab-button " + MlcDesign}  onClick={this.openTab.bind(this, "Mlc-details")}>MLC Patient</button>
 	                                </div>
 		    					</div>

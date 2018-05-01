@@ -27,7 +27,7 @@ export default class OtherInfo extends Component{
 
 	render() {
 		return (
-			<div className="hptl-phase1-add-patient-form">
+			<div className="hptl-phase1-add-other-form">
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -65,9 +65,10 @@ export default class OtherInfo extends Component{
 								//value={this.state.value}
 							/>
 						</div>
-					</div>								
+					</div>	
+					<br />							
 				</div>
-			</div>
+			</div>			
 		);
 	}
 }

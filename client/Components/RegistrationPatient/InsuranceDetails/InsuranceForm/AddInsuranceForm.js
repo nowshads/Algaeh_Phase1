@@ -86,21 +86,28 @@ export default class AddInsuranceForm extends Component{
 						</div>
 
 						<div className="row form-details">
-							<div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-							<label>VALIDITY(FROM - TO)<mark>*</mark></label><br />
-						      <TextFieldData
-						        id="date"
-						        label="Birthday"
-						        type="date"
-						        defaultValue="2017-05-24"
-						      />
+							<div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+								<label>STRAT DATE<mark>*</mark></label><br />
+								<TextFieldData
+									id="date"									
+									type="date"
+									defaultValue="2017-05-24"
+								/>
+							</div>
+							<div className="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+								<label>END DATE<mark>*</mark></label><br />
+								<TextFieldData
+									id="date"									
+									type="date"
+									defaultValue="2017-05-24"
+								/>
 							</div>
 							<div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
 								<div className="image-drop-area refactor-design" style={{marginTop: "38px"}}>
 									<Dropzone onDrop={this.onDrop.bind(this)} className="dropzone">
-										<div>
+										<div>											
 											<button className="htpl1-phase1-btn-primary"
-											style={{float: "right"}}>BROWSE</button>
+											style={{float: "right" }}>BROWSE</button>
 										</div>       
 									</Dropzone>
 									<label className="file-name-upload">{this.state.filePreview}</label>
@@ -111,10 +118,8 @@ export default class AddInsuranceForm extends Component{
                                         style={{float: "left"}}>ADD TO LIST</button>
 							</div>
 						</div>
-
-
-						<div className="row form-details">
-							<table className="table table-striped table-details">
+						{/* <div className="row form-details">
+							<table className="table table-bordered table-details">
 							  <thead style={{background: "#b4e2df"}}>
 							    <tr>
 							     <th scope="col">ACTION</th>
@@ -153,7 +158,7 @@ export default class AddInsuranceForm extends Component{
 							    </tr>
 							  </tbody>
 							</table>
-						</div>
+						</div> */}
 				</div>
 			</div>
 		);

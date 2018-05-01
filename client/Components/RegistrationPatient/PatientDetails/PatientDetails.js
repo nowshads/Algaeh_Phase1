@@ -30,32 +30,31 @@ export default class PatientDetails extends Component{
 	render() {
 		let patientSelect = (this.state.actionPatientDesign) ? "active" : "";
 		let informationSelect = (this.state.actionInformationDesign) ? "" : "active";
-		return (
-			
-				<div className="hptl-phase1-patient-details">
-					<div className="container-fluid">
-						<div className="row">
-							<div className="tab-container toggle-section">
-								<div className="row">
-								<div className="col-xs-4 col-sm-3 col-md-3 col-lg-2 tab" onClick={this.openTab.bind(this, "patient-details")}>
-										<button className={"tab-button " + patientSelect}>PATIENT DETAILS</button>
-									</div>
-									<div className="col-xs-4 col-sm-3 col-md-3 col-lg-2 tab" onClick={this.openTab.bind(this, "other-information")}>
-										<button className={"tab-button " + informationSelect}>OTHER INFORMATION</button>
-									</div>
+		return (			
+			<div className="hptl-phase1-patient-details">
+				<div className="container-fluid">
+					<div className="row">
+						<div className="tab-container toggle-section">
+							<div className="row">							
+								<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 tab" onClick={this.openTab.bind(this, "patient-details")}>
+									<button className={"tab-button " + patientSelect}>PATIENT DETAILS</button>
+								</div>
+								<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 tab" onClick={this.openTab.bind(this, "other-information")}>
+									<button className={"tab-button " + informationSelect}>OTHER INFORMATION</button>
 								</div>
 							</div>
-							<div className="patient-section">
-								{(this.state.actionPatientDesign)?
-								<PatientForm />:
-								null}
-								{(this.state.actionInformationDesign)?
-								null:
-								<OtherInfo />}
-							</div>
+						</div>
+						<div className="patient-section">
+							{(this.state.actionPatientDesign)?
+							<PatientForm />:
+							null}
+							{(this.state.actionInformationDesign)?
+							null:
+							<OtherInfo />}
 						</div>
 					</div>
 				</div>
+			</div>
 		);
 	}
 }
